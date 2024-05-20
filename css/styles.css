@@ -1,0 +1,292 @@
+/****************************
+    Colors 
+****************************/
+body{
+    background-color:#17181d;
+    color:#fff;
+}
+h2{
+    color:#e09145;
+}
+a{
+    color:#e09145;
+    border-bottom:2px solid #e09145;
+}
+a:hover,
+a:focus,
+a:active{
+    color:#e09145;
+    border-bottom-color:transparent;
+}
+a.btn-primary{
+    background-color:#e09145;
+    color: #17181d;
+    border:4px solid #e09145;
+}
+a.btn-primary:hover,
+a.btn-primary:focus,
+a.btn-primary:active{
+    background-color:transparent;
+    color:#e09145;
+    border-color:#e09145;
+}
+/* Nav */
+nav{
+    background-color:rgba(0,0,0,0.3);
+}
+/* Header */
+header p{
+    color:#9e7045;
+}
+header h1 span{
+    color:#e09145;
+}
+/* Portfolio */
+#portfolio{
+    background-color:#292c35;
+}
+#portfolio h3{
+    color:#e09145
+}
+#portfolio .portfolio-hover{
+    background-color:#17181d;
+}
+/* About */
+#about .about-wrapper ul p strong{
+    color:#e09145;
+}
+/* Contact */
+#contact{
+    background-color:#e09145;
+    color:#17181d
+}
+#contact h2{
+    color:#17181d;
+}
+#contact .contact-wrapper h3{
+    color:#292c35;
+}
+#contact .contact-wrapper a{
+    color:#17181d;
+    text-decoration:underline;
+}
+#contact .contact-wrapper a:hover,
+#contact .contact-wrapper a:focus,
+#contact .contact-wrapper a:active{
+    color:#17181d;
+    text-decoration:none;
+}
+
+/****************************
+    General Styles 
+****************************/
+* {
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-size:1em;
+    line-height:1.2;
+}
+section{
+    padding:2em 0 3em;
+}
+
+/* Headers */
+h1{
+    font-size:3em;
+    line-height:1.1;
+    font-weight:800;
+    margin-bottom:4px;
+    text-transform:uppercase;
+}
+h2{
+    font-size:2.5em;
+    font-weight:700;
+    letter-spacing:1px;
+    text-align:center;
+    margin:1em 0;
+}
+
+/* Links */
+a{
+    text-decoration:none;
+    line-height:1.2;
+}
+a:hover,
+a:focus,
+a:active{
+    text-decoration:none;
+}
+
+/* Buttons */
+a.btn-primary{
+    letter-spacing:1px;
+    font-size:1.1em;
+    font-weight:700;
+    text-decoration:none;
+    border-radius:0;
+}
+
+/****************************
+    Navbar Styles 
+****************************/
+nav{
+    padding:1.5em 0;
+}
+nav ul{
+    padding:0;
+    margin:0;
+    margin-bottom:4px;
+    list-style-type:none;
+    display:flex;
+    justify-content:space-evenly;
+}
+
+/****************************
+    Header Styles 
+****************************/
+header{
+    height:400px;
+    display:flex;
+    align-items:center;
+}
+header p,
+header h1,
+header a{
+    margin-left:10%;
+}
+header p{
+    font-weight:bold;
+    font-size:1.3em;
+    margin-bottom:.5em;
+}
+header h1{
+    margin-bottom:.75em;
+}
+@media(min-width:768px){
+    header p,
+    header h1,
+    header a{
+        margin-left:20%;
+    }
+}
+
+/****************************
+    Portfolio Styles 
+****************************/
+#portfolio .portfolio-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+#portfolio .portfolio-card{
+    width:300px;
+    height:300px;
+    margin:1em;
+    text-align:center;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    opacity:.7;
+    transition:opacity .4s ease-in-out;
+}
+#portfolio .portfolio-card:hover{
+    opacity:1;
+}
+#jobApp{
+    background-image:url('../images/jobapptracker.jpg');
+}
+#gameShow{
+    background-image:url('../images/gameAppShow.jpg');
+}
+#author{
+    background-image:url('../images/authorWebsite.jpg');
+}
+#interactive{
+    background-image:url('../images/interactivegallery.jpg');
+}
+#directory{
+    background-image:url('../images/employeeDirectory.jpg');
+}
+#webApp{
+    background-image:url('../images/webappdashboard3.png');
+}
+
+#portfolio .portfolio-hover{
+    height:100%;
+    width:100%;
+    padding:1em;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    opacity:0;
+    transition:opacity .4s ease-in-out;
+}
+#portfolio .portfolio-card:hover .portfolio-hover{
+    opacity:1;
+}
+
+/****************************
+    About Me Styles 
+****************************/
+#about{
+    padding-bottom:4em;
+}
+#about .about-wrapper div:first-child p{
+    font-size:1.1em;
+    line-height:1.2;
+    margin-bottom:0;
+}
+#about .about-wrapper div:last-child{
+    width:100%;
+    max-width:400px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:2em;
+    padding:1.5em;
+    /*box-shadow:0 4px 15px rgba(0,0,0,0.3);*/
+
+}
+#about .about-wrapper ul li{
+    margin-bottom:1em;
+}
+#about .about-wrapper ul p{
+    margin-bottom:4px;
+}
+
+
+/****************************
+    Contact Styles 
+****************************/
+#contact{
+    padding:1em 0;
+}
+#contact h2{
+    margin:0 0 .5em;
+}
+#contact .contact-wrapper{
+    list-style-type:none;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+#contact .contact-wrapper h3{
+    font-size:1.3em;
+    font-weight:bold;
+    margin-bottom:0;
+    display:inline-block;
+}
+#contact .contact-wrapper p{
+    display:inline-block;
+    margin-left:4px;
+    margin-bottom:0;
+}
+@media(min-width:768px){
+    #contact .contact-wrapper{
+        flex-direction:row;
+        justify-content:space-evenly;
+    }
+}
