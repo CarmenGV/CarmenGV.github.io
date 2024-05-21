@@ -190,10 +190,8 @@ header h1{
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
-    opacity:.7;
-    transition:opacity .4s ease-in-out;
 }
-#portfolio .portfolio-card:hover{
+/*#portfolio .portfolio-card:hover{
     opacity:1;
 }
 #jobApp{
@@ -213,7 +211,7 @@ header h1{
 }
 #webApp{
     background-image:url('../images/webappdashboard3.png');
-}
+}*/
 
 #portfolio .portfolio-hover{
     height:100%;
@@ -222,11 +220,6 @@ header h1{
     display:flex;
     flex-direction:column;
     justify-content:space-evenly;
-    opacity:0;
-    transition:opacity .4s ease-in-out;
-}
-#portfolio .portfolio-card:hover .portfolio-hover{
-    opacity:1;
 }
 
 /****************************
