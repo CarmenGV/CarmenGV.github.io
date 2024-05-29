@@ -1,0 +1,836 @@
+/* Fixed Banner */
+.fixed-banner{
+    position:fixed;
+    top:0;
+    z-index:1000;
+    width:100%;
+    height:90px;
+    background-color:#101114;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    color:#e09145;
+}
+.fixed-banner p:first-child{
+    font-size:1.1em;
+    font-weight:bold;
+    margin-bottom:0;
+}
+.fixed-banner p:last-child{
+    margin-top:4px;
+    margin-bottom:0;
+}
+.fixed-banner a{
+    color:#e09145;
+    text-decoration:underline;
+}
+.fixed-banner a:hover,
+.fixed-banner a:focus,
+.fixed-banner a:active{
+    color:#e09145;
+    text-decoration:none;
+}
+
+/*************************************
+    General Styles 
+**************************************/
+body{
+    font-family:"Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style:normal;
+    font-size:1em;
+    line-height:1.3;
+    position:relative;
+    top:90px;
+}
+main{
+    padding:1em 0 3em;
+}
+/* Header Styles */
+h1, h2, h3, h4, h5, h6{
+    font-weight:900;
+}
+@media(min-width:768px){
+    nav#private + main{
+        min-height:calc(100vh - 126px);
+    }
+    nav#public + main{
+        min-height:calc(100vh - 150px);
+    }
+}
+
+/* Buttons */
+/**************************************
+To style any button, use the following class names:
+
+Orange (can only be used against dark background!): class="btn orange-btn"
+
+Green (against dark backgrounds): class="btn green-btn"  
+Dark Green (against light backgrounds): class="btn green-btn dark" 
+
+Blue (against dark backgrounds): class="btn blue-btn"  
+Dark Blue (against light backgrounds): class="btn blue-btn dark" 
+
+White (against dark backgrounds only): class="btn white-btn"
+**************************************/
+.btn{
+    outline:none;
+    border-width:4px;
+    border-style:solid;
+    border-radius:25px;
+    padding:.5em .75em;
+    font-weight:bold;
+    text-decoration:none;
+    display:block;
+    width:100%;
+    max-width:150px;
+}
+/* Orange Button */
+.orange-btn{
+    outline:none;
+    border-color:#f1ab0a;
+    background-color:#f1ab0a;
+    color:#232a35;
+}
+.orange-btn:hover,
+.orange-btn:focus,
+.orange-btn.btn:active{
+    border-color:#f1ab0a;
+    background-color:transparent;
+    color:#f1ab0a;
+    text-decoration:none;
+}
+.orange-btn.dark:hover,
+.orange-btn.dark:focus,
+.orange-btn.dark.btn:active{
+    border-color:#f1ab0a;
+    color:#171d27
+}
+/* Green Button */
+.green-btn{
+    border-color:#05a870;
+    background-color:#05a870;
+    color:#fff;
+}
+.green-btn:hover,
+.green-btn:focus,
+.green-btn.btn:active{
+    border-color:#05a870;
+    background-color:transparent;
+    color:#05a870;
+    text-decoration:none;
+}
+.green-btn.dark{
+    background-color:#0d5b41;
+    border-color:#0d5b41;
+    color:#fff;
+}
+.green-btn.dark:hover,
+.green-btn.dark:focus,
+.green-btn.btn.dark:focus{
+    border-color:#0d5b41;
+    background-color:transparent;
+    color:#0d5b41;
+    text-decoration:none;
+}
+
+/* Blue Button */
+.blue-btn{
+    border-color:#05b2cb;
+    background-color:#05b2cb;
+    color:#232a35;
+}
+.blue-btn:hover,
+.blue-btn:focus,
+.blue-btn.btn:active{
+    border-color:#05b2cb;
+    background-color:transparent;
+    color:#05b2cb
+}
+.blue-btn.dark{
+    color:#fff;
+    background-color:#0d4f59;
+    border-color:#0d4f59;
+}
+.blue-btn.dark:hover,
+.blue-btn.dark:focus,
+.blue-btn.btn.dark:active{
+    border-color:#0d4f59;
+    background-color:transparent;
+    color:#0d4f59;
+}
+
+/* White Button */
+.white-btn{
+    border-color:#fff;
+    background-color:#fff;
+    color:#171d27;
+}
+.white-btn:hover,
+.white-btn:focus,
+.white-btn.btn:active{
+    border-color:#fff;
+    background-color:transparent;
+    color:#fff;
+    text-decoration:none;
+}
+
+/* Accessibility Styles*/
+.orange-btn:focus-visible,
+.green-btn:focus-visible,
+.blue-btn:focus-visible{
+    outline:2px solid #fff;
+}
+.orange-btn.dark:focus-visible,
+.green-btn:focus-visible,
+.blue-btn:focus-visible{
+    outline:2px solid #000;
+}
+
+/* Links */
+/**************************************
+To style any link, use the following class names:
+
+Dark Blue Link (against any light background): class="dk-blue-link"
+Dark Green Link (against any light background): class="dk-green-link"
+
+Green Link (against dark gray/black background): class="green-link"
+Orange Link (against dark gray/black background): class="orange-link"
+Blue link (against dark gray/black background): class="blue-link"
+**************************************/
+a{
+    display:inline-block;
+    font-weight:700;
+    text-decoration:underline;
+    font-size:inherit;
+}
+a:hover,
+a:focus,
+a:active{
+    text-decoration:none;
+}
+/* Dark Blue Link */
+a.dk-blue-link,
+a.dk-blue-link:hover,
+a.dk-blue-link:focus,
+a.dk-blue-link:active{
+    color:#0d4f59;
+}
+/* Dk Green Link */
+a.dk-green-link,
+a.dk-green-link:hover,
+a.dk-green-link:focus,
+a.dk-green-link:active{
+    color:#0d5b41;
+}
+
+/* Green Link */
+a.green-link,
+a.green-link:hover,
+a.green-link:focus,
+a.green-link:active{
+    color:#05a870;
+}
+/* Blue Link */
+a.blue-link,
+a.blue-link:hover,
+a.blue-link:focus,
+a.blue-link:active{
+    color:#05a870;
+}
+/* Orange Link */
+a.orange-link,
+a.orange-link:hover,
+a.orange-link:focus,
+a.orange-link:active{
+    color:#f1ab0a;
+}
+
+/*************************************
+    Modal Styles 
+**************************************/
+div#newAppModal,
+#editProfileModal,
+#changePasswordModal{
+    position: fixed; /* Stay in place */
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+    z-index: 1; /* Sit on top */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+div#newAppContent,
+#editProfileContent,
+#changePasswordContent{
+    margin: 3vh auto; /* 15% from the top and centered */
+    padding: 3em 1em;
+    border: 1px solid #888;
+    width: 98%;
+    background-color: white;
+    border-radius: 10px;
+    background-color:#def5ec;
+    position:relative;
+}
+div#newAppContent{
+    background-color:#f9edd2;
+}
+button#closeNewApp,
+button#closeProfileModal,
+button#closePasswordModal{
+    background-color:transparent;
+    border:none;
+    color:#0d5b41;
+    font-size:2em;
+    font-weight:800;
+    margin:0;
+    padding:0;
+    position:absolute;
+    right:1em;
+    top:.75em;
+}
+button#closeNewApp{
+    color:#000;
+}
+div#newAppContent input,
+div#newAppContent select{
+    border-color:#f1ab0a;
+}
+div#newAppContent input:focus,
+div#newAppContent select:focus{
+    border-color:#f1ab0a;
+    outline:#f1ab0a;
+}
+#newAppContent .button,
+#editProfileContent .button,
+#changePasswordContent .button{
+    display:block;
+    margin-left:auto;
+    float:initial;
+    margin-top:2em;
+}
+@media(min-width:768px){
+    div#newAppContent,
+    #editProfileContent,
+    #changePasswordContent{
+        width:60%;
+        padding: 3em 5em;
+    }
+}
+
+/*************************************
+    Nav Styles 
+**************************************/
+nav{
+    background-color:#232a35;
+    padding:1em 0;
+    text-align:center;
+}
+nav .container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+nav p,
+nav#private a.navbar-brand{
+    line-height:1;
+    font-size:2em;
+    font-weight:900;
+    font-size:calc(1.375rem + 1.5vw);
+    line-height:1.2;
+    color:#05a870;
+}
+/* Nav Buttons */
+nav .nav-btn{
+    display:flex;
+    justify-content:center;
+}
+nav .nav-btn .nav-button{
+    width:150px;
+}
+nav .nav-btn .nav-button:first-child{
+    margin-right:.5em;
+}
+/* Nav Links */
+nav .nav-links{
+    list-style-type:none;
+    margin-bottom:0;
+    margin-top:1em;
+    padding-left:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+nav .nav-links .nav-link{
+    display:inline-block;
+    color:#f1ab0a;
+    font-weight:800;
+    text-decoration:none;
+    border-bottom:2px solid #f1ab0a;
+    margin-bottom:1em;
+    padding-bottom:2px;
+}
+nav .nav-links .nav-link:hover, 
+nav .nav-links .nav-link:focus,
+nav .nav-links .nav-links:active{
+    text-decoration:none;
+    border-bottom-color:transparent;
+}
+@media(min-width:768px){
+    nav#public{
+        height:80px;
+    }
+    nav .container{
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+    }
+    nav p,
+    nav#private a.navbar-brand{
+        margin:0;
+        font-size:1.5em;
+    }
+    /* Nav Buttons */
+    nav .nav-btn .nav-button{
+        margin:0;
+        width: 100px;
+    }
+    /* Nav Links */
+    nav#private.navbar-expand-lg .navbar-collapse{
+        justify-content:flex-end;
+    }
+    nav .nav-links{
+        flex-direction:row;
+        margin-top:0;
+    }
+    nav .nav-links .nav-link{
+        margin-bottom:0;
+        margin-right:1.5em;
+    }
+    nav .nav-links li:last-child .nav-link{
+        margin-right:0;
+    }
+}
+@media(min-width:992px){
+    nav#private{
+        height:56px;
+    }
+}
+
+/*************************************
+    Form Styles 
+**************************************/
+/* Required Marker */
+form .star{
+    color:#BF0603;
+    font-size:1.5em;
+    position:relative;
+    bottom:-8px;
+}
+form label{
+    margin-top:1em;
+    display:block;
+    padding-left:.5em;
+    font-weight:bold;
+}
+form input,
+form select{
+    display:block;
+    width:100%;
+    height:3em;
+    font-size:.9em;
+    line-height:1.1;
+    color:#171d27;
+    border-radius:8px;
+    border:1px solid #0d5b41;
+    padding-left:1em;
+}
+form input:focus,
+form input:focus-visible,
+form select:focus,
+form select:focus-visible{
+    outline-color:#0d5b41;
+    border-left:4px solid #0d5b41;
+}
+
+form .form-error{
+    display:block;
+    color:#BF0603;
+    font-size:.9em;
+    font-weight:bold;
+    padding-left:4px;
+    margin-top:6px;
+}
+
+/* Register and Login Forms */
+.form-header{
+    text-align:center;
+    color:#0d5b41;
+    padding:1em 0;
+}
+.form-instructions{
+    font-weight:bold;
+    text-align:center;
+    margin-bottom:2em;
+}
+form#signup-form,
+form#signin-form{
+    width:100%;
+    max-width:600px;
+    padding:2em;
+    margin:0 auto 4em;
+    border:1px solid #def5ec;
+    border-radius:15px;
+    background-color:#def5ec;
+    color:#0d5b41;
+    box-shadow:0 2px 15px -4px rgba(0,0,0,0.5);
+}
+form#signup-form .button,
+form#signin-form .button{
+    display:block;
+    margin:2em auto;
+}
+form#signup-form .button + a,
+form#signin-form .button + a{
+    display:block;
+    text-align:center;
+}
+
+
+/*************************************
+    Error Page Styles 
+**************************************/
+#error-page h1{
+    font-weight:900;
+    text-align:center;
+    margin-bottom:2em;
+}
+#error-page p{
+    color:#BF0603;
+    font-weight:bold;
+    font-size:1.2em;
+    line-height:1.5;
+    text-align:center;
+    margin-bottom:3em;
+}
+
+/*************************************
+    Footer Styles 
+**************************************/
+footer{
+    background-color:#232a35;
+    color:#fff;
+    font-style:italic;
+    text-align:center;
+    padding:1.5em 0;
+    height:70px;
+}
+footer p{
+    margin-bottom:0;
+}
+
+/*************************************
+    Chart Styles
+**************************************/
+h1.stats-header{
+    text-align:center;
+}
+.chart-container h2,
+.bar-chart h2{
+    font-size:1.5em;
+    text-align:center;
+    margin-bottom:1em;
+}
+.chart-container{
+    padding:2em 0;
+}
+.chart-container .kpi-chart,
+.chart-container .pie-chart,
+.bar-chart{
+    border:1px solid #ccc;
+    border-radius:10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding:1em;
+    max-width:100%;
+}
+.chart-container .kpi-chart{
+    margin-bottom:1.2em;
+}
+.chart-container .kpi-chart {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width:100%;
+}
+.kpi-chart .kpi {
+    text-align: center;
+}
+.kpi-chart .kpi-value {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+.kpi-chart .kpi-label {
+    font-size: 14px;
+    color: #666;
+}
+.chart-container .pie-chart{
+    padding:0;
+}
+.bar-chart{
+    margin-bottom:3em;
+    padding:0;
+}
+.bar-chart h2,
+.pie-chart h2{
+    padding:1em 1em 0;
+}
+.options{
+    display:flex;
+    justify-content:space-between;
+    padding:0 1em;
+}
+.timeRangeDropDown{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+.barDropDown {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+}
+.timeRangeDropDown label,
+.barDropDown label{
+    display:block;
+    text-align:right;
+    font-size:.9em;
+    color:#666;
+    font-weight:bold;
+    margin-bottom:4px;
+}
+.timeRangeDropDown select,
+.barDropDown select{
+    width:100%;
+    border:1px solid #ccc;
+    border-radius:5px;
+    color:#666;
+}
+.timeRangeDropDown select:focus
+.timeRangeDropDown select:focus-visible,
+.barDropDown select:focus,
+.barDropDown select:focus-visible{
+    outline-color:#ccc;
+    border-left:2px solid #ccc;
+}
+@media(min-width:768px){
+    .chart-container{
+        display:flex;
+        justify-content:space-between;
+    }
+    .chart-container .pie-chart{
+        width:52%;
+        margin-bottom:0;
+    }
+    .chart-container .kpi-chart{
+        flex-direction:column;
+        align-items:center;
+        justify-content:space-evenly;
+        width:45%;
+        margin-bottom:0;
+    }
+    .timeRangeDropDown,
+    .barDropDown{
+        flex-direction:row;
+        align-items:center;
+    }
+    .timeRangeDropDown label,
+    .barDropDown label{
+        white-space:nowrap;
+        margin-bottom:0;
+        margin-right:4px;
+        text-align:left;
+    }
+}
+@media(min-width:992px){
+    .chart-container .kpi-chart{
+        width:30%;
+    }
+    .chart-container .pie-chart{
+        width:68%;
+    }
+}
+
+/*************************************
+    Profile Styles 
+**************************************/
+.profile-header{
+    text-align:center;
+    margin-bottom:1em;
+}
+.profile-card{
+    width:100%;
+    max-width:600px;
+    padding:3em 2em;
+    margin:0 auto 4em;
+    border:1px solid transparent;
+    border-radius:15px;
+    background-color:transparent;
+    color:#232a35;
+    box-shadow:0 2px 15px -4px rgba(0,0,0,0.5);
+}
+.profile-card ul{
+    list-style-type:none;
+}
+.profile-card ul li{
+    margin-bottom:1em;
+}
+.profile-card ul li strong{
+    color:#0d5b41;
+    font-weight:800;
+}
+.profile-card .btn-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:3em;
+}
+.profile-card .btn-container button{
+    max-width:200px;
+}
+.profile-card .btn-container button:first-child{
+    margin-bottom:1em;
+}
+@media(min-width:768px){
+    .profile-card ul{
+        display:flex;
+        flex-direction:column;
+    }
+    .profile-card .btn-container{
+        flex-direction:row;
+        justify-content:space-evenly;
+    }
+    .profile-card .btn-container button:first-child{
+        margin-bottom:0;
+        margin-right:1em;
+    }
+}
+
+.password-change-message{
+    color:#0d5b41;
+    font-weight:800;
+    font-size:1.2em;
+    text-align:center;
+    margin-bottom:1em;
+}
+
+/*************************************
+    Company Page Styles 
+**************************************/
+#company-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+#company-container .company-card {
+    background-color: #f9edd2;
+    border-radius: 15px;
+    width:20%;
+    min-width:220px;
+    max-width:220px;
+    margin:1em;
+  }
+  #company-container .company-link {
+    display: block;
+    height:100%;
+    text-decoration: none;
+    color: inherit;
+    border-radius:15px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow .3s ease-in-out;
+  }
+  #company-container .company-link:hover,
+  #company-container .company-link:focus{
+    box-shadow:2px 0 20px rgba(0,0,0,0.6);
+  }
+  #company-container .company-link:focus-visible{
+    outline:4px solid #f1ab0a;
+    border-radius:15px;
+  }
+  #company-container .company-img{
+    background-color:#fff;
+    padding:1em;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:180px;
+    border-radius:15px 15px 40px 0;
+    transition: border-radius .3s ease-in-out;
+  }
+  #company-container .company-img img{
+    max-width:100%;
+    height:auto;
+  }
+  #company-container .company-content{
+    text-align:center;
+    background-color:#fff;
+    border-radius:0 0 15px 15px;
+  }
+  #company-container h5{
+    margin:0;
+    padding-top:25px;
+    background-color:#f9edd2;
+    border-top-left-radius:40px;
+    transition: border-radius .3s ease-in-out;
+  }
+  #company-container p{
+    margin:0;
+    padding-bottom:25px;
+    background-color:#f9edd2;
+    border-radius:0 0 15px 15px;
+  }
+/* Transition */
+#company-container .company-link:hover .company-img{
+    border-radius:15px 15px 0 0;
+}
+#company-container .company-link:hover h5{
+    border-top-left-radius:0;
+}
+
+/* Company Modal */
+#companyModal .modal-dialog{
+    max-width:600px;
+}
+#companyModal .modal-header{
+    background-color:#f1ab0a;
+    border-radius:15px 15px 0 0;
+}
+#companyModal .modal-content{
+    border-radius:15px;
+}
+#companyModal .modal-body{
+    padding:1.5em;
+}
+#companyModal .modal-body .row{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+#companyModal .modal-body .row>*{
+    width:initial;
+}
+@media(min-width:768px){
+    #companyModal .modal-body .row{
+        flex-direction:row;
+        justify-content:space-evenly;
+    }
+}
