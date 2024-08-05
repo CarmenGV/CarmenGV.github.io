@@ -17,13 +17,13 @@
 
   <!-- NavBar -->
   <nav class="custom-navbar">
-    <button class="navbar-button" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="menuOpen()">
+    <button class="navbar-button" type="button" aria-controls="collapsible-links" aria-expanded="false" aria-label="Toggle navigation" onclick="menuOpen()">
       <span class="menu-toggler"></span>
     </button>
     <h1><a class="logo" href="#">room</a></h1>
     <div class="navbar-links-collapse" id="navbar-links">
       <span class="close-navbar" onclick="menuClose()">&times;</span>
-      <ul class="navbar-links-wrapper">
+      <ul class="navbar-links-wrapper" id="collapsible-links">
         <li>
           <a class="navbar-link" href="#" onclick="demoMessage();">Home <span class="sr-only">(current)</span></a>
         </li>
@@ -135,7 +135,7 @@
     <div class="custom-dialog">
       <div class="custom-header">
         <h4>Demo Landing Page</h4>
-        <button type="button" class="close-modal" onclick="closeModal()" aria-label="Close">&times</button>
+        <button type="button" class="close-modal" onclick="closeModal()" aria-label="Close">&times;</button>
       </div>
       <div class="custom-body">
         <p>This is landing page for a fictional furniture e-commerce site. It was styled using CSS, HTML5, and JavaScript, and Boostrap. The header slider is a custom-made feature.</p>
