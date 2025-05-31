@@ -1,0 +1,311 @@
+/***************************
+Color Scheme
+#031825 - Rich Black (Dk Blue)
+#102837 - Gunmetal (Dk Med Blue)
+#304f5f - Charcoal (Med Gray Blue)
+#dce0d9 - Platinum (Off White)
+#db9d47 - Earth Yellow (Lt Orange)
+****************************/
+
+/****************************
+    Colors 
+****************************/
+body{
+    background-color:#031825;
+    color:#dce0d9;
+}
+h2{
+    color:#db9d47;
+}
+a{
+    color:#db9d47;
+    border-bottom:2px solid #db9d47;
+}
+a:hover,
+a:focus,
+a:active{
+    color:#db9d47;
+    border-bottom-color:transparent;
+}
+a.btn-primary{
+    background-color:#db9d47;
+    color: #031825;
+    border:4px solid #db9d47;
+}
+a.btn-primary:hover,
+a.btn-primary:focus,
+a.btn-primary:active{
+    background-color:transparent;
+    color:#db9d47;
+    border-color:#db9d47;
+}
+/* Nav */
+nav{
+    background-color:rgba(0,0,0,0.3);
+}
+/* Header */
+header p{
+    color:rgb(220, 224, 217, 0.7);
+}
+header h1 span{
+    color:#db9d47;
+}
+/* Portfolio */
+#portfolio{
+    background-color:#102837;
+}
+#portfolio h3{
+    color:#db9d47
+}
+#portfolio .portfolio-hover{
+    background-color:#031825;
+}
+/* About */
+#about .about-subheader{
+    color:#db9d47;
+}
+/* Contact */
+#contact{
+    background-color:#304f5f;
+    color:#dce0d9
+}
+#contact h2{
+    color:#dce0d9;
+}
+#contact .contact-wrapper h3{
+    color:#dce0d9;
+}
+#contact .contact-wrapper a{
+    color:#dce0d9;
+    text-decoration:none;
+    border-color:#dce0d9;
+}
+#contact .contact-wrapper a:hover,
+#contact .contact-wrapper a:focus,
+#contact .contact-wrapper a:active{
+    color:#dce0d9;
+    text-decoration:none;
+    border-color:transparent;
+}
+
+/****************************
+    General Styles 
+****************************/
+* {
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-size:1em;
+    line-height:1.2;
+}
+section{
+    padding:3em 0;
+}
+
+/* Headers */
+h1{
+    font-size:3em;
+    line-height:1.1;
+    font-weight:800;
+    margin-bottom:4px;
+    text-transform:uppercase;
+}
+h2{
+    font-size:2.5em;
+    font-weight:700;
+    letter-spacing:1px;
+    text-align:center;
+    margin:0 0 1em;
+}
+
+/* Links */
+a{
+    text-decoration:none;
+    line-height:1.2;
+}
+a:hover,
+a:focus,
+a:active{
+    text-decoration:none;
+}
+
+/* Buttons */
+a.btn-primary{
+    letter-spacing:1px;
+    font-size:1.1em;
+    font-weight:700;
+    text-decoration:none;
+    border-radius:0;
+}
+
+/****************************
+    Navbar Styles 
+****************************/
+nav{
+    padding:1.5em 0;
+}
+nav ul{
+    padding:0;
+    margin:0;
+    margin-bottom:4px;
+    list-style-type:none;
+    display:flex;
+    justify-content:space-evenly;
+}
+
+/****************************
+    Header Styles 
+****************************/
+header{
+    height:400px;
+    display:flex;
+    align-items:center;
+}
+header p,
+header h1,
+header a{
+    margin-left:10%;
+}
+header p{
+    font-weight:bold;
+    font-size:1.3em;
+    margin-bottom:.5em;
+}
+header h1{
+    margin-bottom:.75em;
+}
+@media(min-width:768px){
+    header p,
+    header h1,
+    header a{
+        margin-left:20%;
+    }
+}
+
+/****************************
+    Portfolio Styles 
+****************************/
+#portfolio .portfolio-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+#portfolio .portfolio-card{
+    width:300px;
+    height:300px;
+    margin:1em;
+    text-align:center;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+#portfolio .portfolio-hover{
+    height:100%;
+    width:100%;
+    padding:1em;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+}
+
+/****************************
+    About Styles 
+****************************/
+#about .about-desc{
+    font-size:1.1em;
+    line-height:1.2;
+    margin-bottom: 2em;
+}
+#about .about-subheader{
+    font-size:1.2em;
+    font-weight:bold;
+    margin-bottom:1em;
+}
+#about .about-skills{
+    width:100%;
+    max-width:400px;
+    margin:0 auto;
+}
+#about .about-edu ul,
+#about .about-stack dl{
+    width:100%;
+    padding:0 1.5em;
+}
+#about .about-edu ul{
+    margin-bottom:3em;
+    list-style-type:none;
+}
+#about .about-edu ul li{
+    margin-bottom:1em;
+}
+#about .about-edu ul p,
+#about .about-stack dt{
+    margin-bottom:.25em;
+}
+#about .about-stack dd{
+    margin-bottom:1em;
+}
+#about .about-stack dt{
+    font-weight:bold;
+}
+@media(max-width:767px){
+    #about{
+        padding-left:1em;
+        padding-right:1em;
+    }
+}
+@media(min-width:768px){
+    #about .about-desc{
+        max-width:900px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    #about .about-skills{
+        max-width:800px;
+        display:flex;
+    }
+    #about .about-edu,
+    #about .about-stack{
+        width:50%;
+    }
+}
+
+/****************************
+    Contact Styles 
+****************************/
+#contact{
+    padding:3em 0;
+}
+#contact h2{
+    margin:0 0 1em;
+}
+#contact .contact-wrapper{
+    list-style-type:none;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-left:0;
+}
+#contact .contact-wrapper h3{
+    font-size:1.3em;
+    font-weight:bold;
+    margin-bottom:0;
+    display:inline-block;
+}
+#contact .contact-wrapper p{
+    display:inline-block;
+    margin-left:4px;
+}
+@media(min-width:768px){
+    #contact .contact-wrapper{
+        flex-direction:row;
+        justify-content:space-evenly;
+    }
+    #contact .contact-wrapper p{
+        margin-bottom:0;
+    }
+}
