@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		return found;
 	}
 
-	function whileLoop (parent){
+	function removePhrase (parent){
 		while(parent.children.length>0){
 			parent.removeChild(parent.children[0]);
 		}
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	function reset(){
 		//removing phrase
-		whileLoop(ul);
+		removePhrase(ul);
 		display();
 
 		//removing text from overlay
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		const qwertyChild = qwerty.children;
 		for(i=0; i<qwertyChild.length; i++){
 			let parent1 = qwertyChild[i];
-			whileLoop(parent1);
+			removePhrase(parent1);
 		}
 
 		function addNewButtons(num){

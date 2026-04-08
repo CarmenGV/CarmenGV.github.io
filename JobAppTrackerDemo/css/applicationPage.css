@@ -144,6 +144,7 @@ a {
     border-radius: 10px;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     margin-bottom:1rem;
+    position:relative;
 }
 .status-item span{
     white-space: nowrap;
@@ -151,6 +152,9 @@ a {
     overflow: hidden;
     text-overflow: ellipsis;
     margin-bottom:4px;
+}
+.status-item.hover{
+    cursor:pointer;
 }
 
 /* Border-left color for each status */
@@ -164,9 +168,9 @@ a {
 .status-container .status-section:first-child .status-item{
     border-left-color:#f1ab0a;
 }
-.status-container .status-section:first-child .status-item:hover,
-.status-container .status-section:first-child .status-item:focus,
-.status-container .status-section:first-child .status-item:active{
+.status-container .status-section:first-child .status-item.hover:hover,
+.status-container .status-section:first-child .status-item.hover:focus,
+.status-container .status-section:first-child .status-item.hover:active{
     background-color:#f9edd2;
 }
 /* Applied */
@@ -176,9 +180,9 @@ a {
 .status-container .status-section:nth-child(2) .status-item{
     border-left-color:#F46036;
 }
-.status-container .status-section:nth-child(2) .status-item:hover,
-.status-container .status-section:nth-child(2) .status-item:focus,
-.status-container .status-section:nth-child(2) .status-item:active{
+.status-container .status-section:nth-child(2) .status-item.hover:hover,
+.status-container .status-section:nth-child(2) .status-item.hover:focus,
+.status-container .status-section:nth-child(2) .status-item.hover:active{
     background-color:#feece7;
 }
 /* Screening */
@@ -188,9 +192,9 @@ a {
 .status-container .status-section:nth-child(3) .status-item{
     border-left-color:#CC3363;
 }
-.status-container .status-section:nth-child(3) .status-item:hover,
-.status-container .status-section:nth-child(3) .status-item:focus,
-.status-container .status-section:nth-child(3) .status-item:active{
+.status-container .status-section:nth-child(3) .status-item.hover:hover,
+.status-container .status-section:nth-child(3) .status-item.hover:focus,
+.status-container .status-section:nth-child(3) .status-item.hover:active{
     background-color:#faebef;
 }
 /* Interviewing */
@@ -200,9 +204,9 @@ a {
 .status-container .status-section:nth-child(4) .status-item{
     border-left-color:#0497ae;
 }
-.status-container .status-section:nth-child(4) .status-item:hover,
-.status-container .status-section:nth-child(4) .status-item:focus,
-.status-container .status-section:nth-child(4) .status-item:active{
+.status-container .status-section:nth-child(4) .status-item.hover:hover,
+.status-container .status-section:nth-child(4) .status-item.hover:focus,
+.status-container .status-section:nth-child(4) .status-item.hover:active{
     background-color:#e6fbfe;
 }
 /* Rejected */
@@ -212,9 +216,9 @@ a {
 .status-container .status-section:nth-child(5) .status-item{
     border-left-color:#c1121f;
 }
-.status-container .status-section:nth-child(5) .status-item:hover,
-.status-container .status-section:nth-child(5) .status-item:focus,
-.status-container .status-section:nth-child(5) .status-item:active{
+.status-container .status-section:nth-child(5) .status-item.hover:hover,
+.status-container .status-section:nth-child(5) .status-item.hover:focus,
+.status-container .status-section:nth-child(5) .status-item.hover:active{
     background-color:#ffe6e6;
 }
 /* Hired */
@@ -224,9 +228,9 @@ a {
 .status-container .status-section:last-child .status-item{
     border-left-color:#05A870;
 }
-.status-container .status-section:last-child .status-item:hover,
-.status-container .status-section:last-child .status-item:focus,
-.status-container .status-section:last-child .status-item:active{
+.status-container .status-section:last-child .status-item.hover:hover,
+.status-container .status-section:last-child .status-item.hover:focus,
+.status-container .status-section:last-child .status-item.hover:active{
     background-color:#e6fef6;
 }
 
