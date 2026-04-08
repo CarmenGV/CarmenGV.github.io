@@ -131,10 +131,10 @@ document.addEventListener('DOMContentLoaded', () => {
 		const totalLetters = document.getElementsByClassName("letter");
 		const totalGuessed = document.getElementsByClassName("show");
 		if(totalLetters.length === totalGuessed.length){
-			overlayStart("win","Play Again","You Win!");
+			setTimeout(overlayStart, 3000, "win", "Play Again", "You Win!");
 		}
 		if(missed === 5){
-			overlayStart("lose", "Try Again","You Lose!");
+			setTimeout(overlayStart, 1000, "lose", "Try Again", "You Lose");
 		}
 	}
 
